@@ -21,7 +21,7 @@ alias ll='ls -lisa'
 alias psa='ps auxwwww'
 alias cdc='cd ~/current'
 alias open='xdg-open'
-alias backup_open="sudo cryptsetup luksOpen /dev/sda1 backup"
+alias backup_open="sudo cryptsetup luksOpen /dev/sdc1 backup"
 alias backup_lock="sudo cryptsetup luksClose backup"
 
 alias kctx='kubectx'

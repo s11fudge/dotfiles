@@ -281,8 +281,8 @@ local default_plugins = {
     'Exafunction/codeium.vim',
     event = 'BufEnter',
     config = function()
-      vim.keymap.set('n', '<c-x>', function() return vim.fn['codeium#Chat']() end, { expr = true, silent = true })
       vim.keymap.set('i', '<C-g>', function () return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
+      vim.g.codeium_no_map_tab = true
     end
   },
 }

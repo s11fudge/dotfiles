@@ -12,4 +12,3 @@ MAILTO=""
 */25 * * * * BASH_ENV=/etc/profile /home/fgeusch/bin/shuffle-bg
 0 */2 * * * notmuch new
 */30 * * * * joplin sync
-* * * * * docker run --rm --privileged --net=host bluetooth_battery_level 'AC:12:2F:AC:AA:08' | awk '{print $NF}' | sed 's/\.//g' > /tmp/headset-lvl

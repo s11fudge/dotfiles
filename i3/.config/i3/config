@@ -225,7 +225,7 @@ exec_always --no-startup-id compton
 exec_always --no-startup-id rescuetime
 exec_always --no-startup-id nextcloud
 exec_always --no-startup-id nm-applet
-exec --no-startup-id feh --bg-scale ~/Pictures/bg.jpg
+exec_always --no-startup-id feh --bg-scale ~/Pictures/bg.jpg
 
 
 # Bind App to workspace

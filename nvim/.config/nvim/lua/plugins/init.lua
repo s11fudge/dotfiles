@@ -257,6 +257,11 @@ local default_plugins = {
     "theHamsta/nvim-dap-virtual-text"
   },
 
+  {
+    "leoluz/nvim-dap-go"
+  },
+
+
   -- tmux navigation
   {
     "christoomey/vim-tmux-navigator",
@@ -292,5 +297,7 @@ local config = require("core.utils").load_config()
 if #config.plugins > 0 then
   table.insert(default_plugins, { import = config.plugins })
 end
+
+vim.api.nvim_set_keymap('n', '<leader>db', ':lua require("dap").toggle_breakpoint()<CR>', { noremap = true, silent = true })
 
 require("lazy").setup(default_plugins, config.lazy_nvim)

@@ -35,3 +35,6 @@ history = 0
 decorations = "none"
 startup_mode = "Fullscreen"
 opacity = 0.94
+
+[env]
+TERM = "xterm-256color"

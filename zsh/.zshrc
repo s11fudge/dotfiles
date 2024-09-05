@@ -5,7 +5,7 @@ ZSH_DISABLE_COMPFIX=true
 fpath+=~/.config/completions
 fpath+=~/.asdf/completions
 
-export TERM="tmux-256color"
+# export TERM="tmux-256color"
 export ZSH="${HOME}/.oh-my-zsh"
 
 # Set name of the theme to load.
@@ -94,8 +94,7 @@ export JIRA_NAME=$USER
 [ -s "${HOME}/.scm_breeze/scm_breeze.sh" ] && source "${HOME}/.scm_breeze/scm_breeze.sh"
 
 # fzf
-source /usr/share/doc/fzf/examples/key-bindings.zsh
-source /usr/share/doc/fzf/examples/completion.zsh
+source <(fzf --zsh)
 
 # go
 export GOPATH=${HOME}/work/src/other/gopath

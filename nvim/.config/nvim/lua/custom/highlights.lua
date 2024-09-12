@@ -10,6 +10,8 @@ M.override = {
     italic = true,
   },
   NonText = { fg = "#334455" },
+  CursorLine = { bg = "statusline_bg" },
+  CursorColumn = { bg = "statusline_bg" },
 }
 
 ---@type HLTable

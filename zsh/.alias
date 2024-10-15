@@ -1,5 +1,7 @@
 alias dps='docker ps'
 alias dpsa='docker ps -a'
+alias dl='docker logs'
+alias dlf='dl -f'
 alias nixos='ssh -p 22221 nixos@localhost'
 alias macos='ssh -p 22220 fudge@localhost'
 alias unlock='bw unlock `pass syseleven/bitwarden.syseleven.net/f.geusch@syseleven.de`'
@@ -33,4 +35,5 @@ alias bw_all="bw list items --collectionid 044e6c6d-193b-49da-8381-aeb500b3ff43|
 alias clr="ccze -A"
 
 alias vpntoken="oathtool -b --totp=SHA1 --time-step-size=60s TWTIISLLCUMS7WH2PLO4QP53HLLT4UMP"
-alias vpnconnect="vpntoken| sudo openfortivpn -c ~/.vpnconfig"
+alias vpnconnect="vpntoken| sudo openfortivpn -c ~/.vpn/blu1"
+alias nixs=kubectl -n mka-system exec svc/nix -- 

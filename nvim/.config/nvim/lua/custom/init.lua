@@ -29,4 +29,5 @@ vim.o.foldmethod   = "indent"
 vim.o.foldlevel    = 99
 vim.o.foldexpr     = "v:lua.vim.treesitter.foldexpr()"
 vim.o.nofoldenable = true
+vim.o.relativenumber = true
 

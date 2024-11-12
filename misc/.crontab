@@ -1,6 +1,5 @@
 MAILTO=""
 
 */10 * * * * /usr/local/bin/mailsync >/dev/null 2>&1
-*/25 * * * * BASH_ENV=/etc/profile /home/fgeusch/bin/shuffle-bg
 0 */2 * * * notmuch new
 */30 * * * * joplin sync

@@ -36,4 +36,5 @@ alias clr="ccze -A"
 
 alias vpntoken="oathtool -b --totp=SHA1 --time-step-size=60s TWTIISLLCUMS7WH2PLO4QP53HLLT4UMP"
 alias vpnconnect="vpntoken| sudo openfortivpn -c ~/.vpn/blu1"
+alias vpnclose="sudo killall -3 openfortivpn"
 alias nixs=kubectl -n mka-system exec svc/nix -- 
